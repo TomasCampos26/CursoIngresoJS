@@ -6,5 +6,15 @@ en el cuadro de texto "RESULTADO"
 Campos Tomás - Div X */
 function mostrarAumento()
 {
-	alert("ok");
+	let importe;
+	let resultado;
+
+	importe = document.getElementById("txtIdImporte").value;
+	
+	importe = parseInt(importe);
+
+	resultado = importe - (importe * 25) / 100;
+
+	document.getElementById("txtIdResultado").value = resultado;
+	
 }

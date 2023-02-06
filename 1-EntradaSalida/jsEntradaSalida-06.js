@@ -6,13 +6,21 @@ Campos Tomás - Div X  */
 function sumar()
 {
 	//parsing: convertir algo tipo cadena (string) a valor numerico y viceversa
-	//parseInt: convierte cadena a numero entero      												variable=parseInt(x)
+	//parseInt: convierte cadena a numero entero      								
 	//parseFloat: convierte dato cadena flotante a numero, acepta numero decimal
 	//casting: convertir un tipo de dato numerico a
 	
+	let numeroUno;
+	let numeroDos;
+	let resultado;
+
+	numeroUno = document.getElementById("txtIdNumeroUno").value;
+	numeroDos = document.getElementById("txtIdNumeroDos").value;
+
+	numeroUno = parseInt(numeroUno);
+	numeroDos = parseInt(numeroDos);
+	resultado = numeroUno+numeroDos;
 	
-	
-	
-	alert("ok");
+	alert("La suma es " +resultado);
 }
 

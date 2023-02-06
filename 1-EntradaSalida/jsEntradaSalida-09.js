@@ -6,6 +6,13 @@ en el cuadro de texto "RESULTADO".
 Campos Tomás - Div X */
 function mostrarAumento()
 {
+	let sueldo;
+	let resultado;
 
-	alert("ok");
+	sueldo	  = document.getElementById("txtIdSueldo").value;
+	sueldo	  = parseInt(sueldo);
+	resultado = sueldo + (sueldo / 10);
+	document.getElementById("txtIdResultado").value = resultado;
+
+	alert("El resultado es: "+resultado);
 }
